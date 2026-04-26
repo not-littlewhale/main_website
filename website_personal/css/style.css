@@ -12,6 +12,8 @@
     --text-color: #fff;
     --text-secondary: #ccc;
     --text-muted: #999;
+    --text-link:#a6c4ff;
+    --text-link-visited:#7f9acf;
     --accent-color: #93a2c0;
     --accent-hover: rgb(14, 60, 109);
     --border-color: #666;
@@ -111,7 +113,7 @@ header {
 .hero {
     background: linear-gradient(135deg, var(--primary-bg) 0%, var(--accent-color) 100%);
     color: var(--text-color);
-    padding: 4rem 0;
+    padding: 0rem 0;
     margin-top: 2rem;
 }
 
@@ -141,6 +143,14 @@ header {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     max-width: 600px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
 }
 
 /* ===== Section Headers ===== */
@@ -278,7 +288,7 @@ header {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     align-items: center;
 }
@@ -304,7 +314,30 @@ header {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
-    color: var(--text-secondary);
+    color: var(--text-color);
+}
+
+.skills-list li:link :active{
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-link);
+    
+}
+
+.skills-list li a {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-link);
+}
+
+
+.skills-list li a:visited{
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-link-visited);
 }
 
 .skills-list li:before {
@@ -316,9 +349,8 @@ header {
 }
 
 .about-image img {
-    width: 100%;
+    width: 120%;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== FAQ Menu (taken from the original Experience tab) ===== */
