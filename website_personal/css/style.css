@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family:monospace;
+    font-family: monospace;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--primary-bg);
@@ -482,6 +482,60 @@ header {
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
+
+/* ===== osu Skin Display ===== */
+.skin-display {
+    padding: 4rem 0;
+    background-color: var(--primary-bg);
+}
+
+.skin-display img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.introduction-text h3, .skin-display h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    color: var(--text-color);
+}
+
+.skin-display .subtitle {
+    font-size: 1rem;
+    position: relative;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+
+}
+
+.introduction-text p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.introduction-display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.screenshot-display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
 
 /* ===== CTA Section ===== */
 .cta {
